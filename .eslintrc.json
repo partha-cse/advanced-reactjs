@@ -1,0 +1,116 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "eqeqeq": "off",
+        "no-alert": "off",
+        "camelcase": "off",
+        "linebreak-style": "off",
+        "no-useless-escape": "off",
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off",
+
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine":"auto",
+                "printWidth": 100,
+                "tabWidth": 4,
+                "singleQuote": true
+            }
+        ],
+
+        "max-len": "warn",
+        "no-empty": "warn",
+        "guard-for-in": "warn",
+        "new-cap": "warn",
+        "no-plusplus": "warn",
+        "no-return-await": "warn",
+        "no-unused-vars": "warn",
+        "no-underscore-dangle": "warn",
+        "no-undef": "warn",
+        "no-shadow": "warn",
+        "no-continue": "warn",
+        "no-useless-concat": "warn",
+        "no-return-assign": "warn",
+        "no-param-reassign": "warn",
+        "no-restricted-globals": "warn",
+        "max-classes-per-file": "warn",
+        "no-case-declarations": "warn",
+        "array-callback-return": "warn",
+        "no-prototype-builtins": "warn",
+        "no-restricted-syntax": "warn",
+        "no-console": ["warn", { "allow": ["warn", "error"] }],
+        "no-unused-expressions": "warn",
+        "no-nested-ternary": "warn",
+        "consistent-return": "warn",
+        "prefer-destructuring": "warn",
+        "no-use-before-define": "warn",
+        "default-case": "warn",
+        "max-lines-per-function": ["error", { "max": 450 }],
+
+        "react/prop-types": "warn",
+        "react/no-unescaped-entities": "warn",
+        "react/destructuring-assignment": "warn",
+        "react/jsx-fragments": ["error", "element"],
+        "react/forbid-prop-types": [
+            "warn",
+            {
+                "forbid": [
+                    "any",
+                    "array",
+                    "object"
+                ],
+                "checkContextTypes": true,
+                "checkChildContextTypes": true
+            }
+        ],
+        "react/no-unused-state": "warn",
+        "react/require-default-props": "warn",
+        "react/no-access-state-in-setstate": "warn",
+        "react/jsx-props-no-spreading": "warn",
+        "react/no-unused-prop-types": "warn",
+        "react/no-array-index-key": "warn",
+        "react/jsx-no-target-blank": "warn",
+        "react/prefer-stateless-function": "warn",
+        "react/no-did-update-set-state": "warn",
+        "class-methods-use-this": "warn",
+        "react/no-string-refs": "warn",
+        "react/jsx-no-duplicate-props": "warn",
+        "react/default-props-match-prop-types": "warn",
+        "react/no-typos": "warn",
+        "react/no-deprecated": "warn",
+        "react/no-this-in-sfc": "warn",
+        "react/static-property-placement": "warn",
+        "react/jsx-filename-extension": "off",
+
+        "jsx-a11y/no-static-element-interactions": "warn",
+        "jsx-a11y/click-events-have-key-events": "warn",
+        "jsx-a11y/anchor-is-valid": "warn",
+        "jsx-a11y/label-has-associated-control": "warn",
+        "jsx-a11y/no-noninteractive-element-interactions": "warn",
+        "jsx-a11y/control-has-associated-label": "warn",
+        "jsx-a11y/interactive-supports-focus": "warn",
+        "jsx-a11y/no-noninteractive-tabindex": "warn"
+    }
+}
